@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0d12">
+<title>RARE PUBLICATIONS — An Independent Creative Organisation</title>
+<meta name="description" content="RARE PUBLICATIONS brings writers, filmmakers and creators together to develop original work, collaborate and publish.">
+<link rel="canonical" href="https://YOUR-DOMAIN.example/">
+<meta property="og:title" content="RARE PUBLICATIONS"><meta property="og:description" content="Ideas deserve a place to exist.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header class="topbar"><a class="wordmark" href="#"><span>RARE</span> PUBLICATIONS</a><nav id="publicNav"><a href="#departments">Departments</a><a href="#about">About</a><button class="btn outline" data-open="login">Member login</button><button class="btn" data-open="apply">Apply to join</button></nav><div id="privateNav" class="hidden"><span id="userLabel"></span><button class="btn outline" id="logout">Log out</button></div><button class="mobileMenu" id="menuBtn">☰</button></header>
+<main>
+<section class="hero" id="home"><div class="heroText"><div class="kicker"><i></i> AN INDEPENDENT CREATIVE ORGANISATION</div><h1>Ideas deserve<br>a place to <em>exist.</em></h1><p>Writers, filmmakers and creators. One independent space to imagine, collaborate, build and publish original work.</p><div class="heroActions"><button class="btn" data-open="apply">Apply for membership <span>↗</span></button><button class="btn outline" data-open="login">Member login</button></div><div class="heroFoot"><span>INDEPENDENT BY DESIGN</span><span>EST. RARE PUBLICATIONS</span></div></div><div class="heroArt"><div class="orbit orbit1"></div><div class="orbit orbit2"></div><div class="orbCore">R<span>P</span></div><div class="artLabel labelA">CREATE<br>WITHOUT LIMITS</div><div class="artLabel labelB">01 / 02<br>WRITERS · FILMMAKERS</div></div></section>
+<section class="manifesto" id="about"><div class="sectionTag">01 — OUR PURPOSE</div><div><h2>A home for work<br>that <em>matters.</em></h2><p>RARE PUBLICATIONS is an independent creative organisation built around original ideas and the people determined to bring them to life. We make room for stories, films, experiments and collaborations.</p></div></section>
+<section class="departments" id="departments"><div class="sectionTag">02 — THE DEPARTMENTS</div><div class="deptGrid"><article class="dept"><div class="deptNo">01 / WORDS</div><h3>Writers’ Room</h3><p>Stories, novels, screenplays, poetry and worlds waiting to be written.</p><span class="deptArrow">↗</span></article><article class="dept"><div class="deptNo">02 / IMAGES</div><h3>Film Studio</h3><p>Films, animation, visual storytelling and ideas brought to the screen.</p><span class="deptArrow">↗</span></article></div></section>
+<section class="publicLibrary"><div><div class="sectionTag">03 — PUBLICATIONS</div><h2>Made here.<br><em>Shared with the world.</em></h2></div><p>Selected public works from RARE members will appear here as they are approved for publication.</p><div id="publicWorks" class="works"><div class="empty">The public catalogue is being prepared.</div></div></section>
+<section id="workspace" class="workspace hidden"><aside class="side"><div class="sideTitle">YOUR WORKSPACE</div><button class="sideLink active" data-page="overview">Overview</button><button class="sideLink" data-page="applications" data-head>Applications</button><button class="sideLink" data-page="members" data-head>Members</button><button class="sideLink" data-page="projects">Projects</button><button class="sideLink" data-page="notes">Private notes</button><button class="sideLink" data-page="chat">Group chat</button><button class="sideLink" data-page="library">RARE Library</button><button class="sideLink" data-page="leadership" data-head>Heads’ Space</button></aside><div class="workMain"><div class="workTop"><div><div class="sectionTag">PRIVATE MEMBER AREA</div><h2 id="pageTitle">Overview</h2></div><span class="statusPill" id="rolePill">MEMBER</span></div><div id="pageContent"></div></div></section>
+</main>
+<footer><a class="wordmark" href="#"><span>RARE</span> PUBLICATIONS</a><span>AN INDEPENDENT CREATIVE ORGANISATION</span><span>© <span id="year"></span> RARE PUBLICATIONS</span></footer>
+<dialog id="authDialog"><button class="close" id="closeDialog">×</button><div id="dialogContent"></div></dialog>
+<div id="toast" role="status"></div>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
